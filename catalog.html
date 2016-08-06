@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+    <header class="catalog-header">
+      <div class="container">
+        <div class="logo header-left">
+          <a href="#">
+            <img src="http://placehold.it/100x50" alt="logo">
+          </a>
+        </div>
+        <form class="search-form header-left" action="https://echo.htmlacademy.ru" method="post">
+          <button type="submit"><img src="http://placehold.it/10x10" alt="search"></button>
+          <input type="search" name="search">
+        </form>
+        <div class="user-block">
+            <a class="enter" href="#">Войти</a>
+            <a class="compare" href="#">Сравнить</a>
+            <a class="basket" href="#">Корзина</a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li class="header-left">
+              <a href="#">Каталог товаров <span>+</span></a>
+            </li>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Гарантия</a>
+            </li>
+            <li class="contacts">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="zero-one">
+          01
+        </div>
+      </div>
+    </header>
+    <main class="catalog-main">
+      <h1>Моноподы для селфи</h1>
+      <div class="breadscrumbs">
+        <ul>
+          <li>
+            <a href="#">Главная</a>
+          </li>
+          <li>
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li>
+            <a>Моноподы для селфи</a>
+          </li>
+        </ul>
+      </div>
+      <section class="main-filter">
+        <h2>Фильтр</h2>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend class="form-legend">Стоимость</legend>
+            <input type="range" min="0" max="10000" value="5000" name="cost">
+          </fieldset>
+          <fieldset>
+            <legend class="form-legend">Цвет</legend>
+            <input type="checkbox" name="black" value="Черный" checked>
+            <input type="checkbox" name="white" value="Белый">
+            <input type="checkbox" name="blue" value="Синий" checked>
+            <input type="checkbox" name="red" value="Красный" checked>
+            <input type="checkbox" name="pink" value="Розовый">
+          </fieldset>
+          <fieldset>
+            <legend class="form-legend">Bluetooth</legend>
+            <input type="radio" value="Есть" name="bluetooth" checked>
+            <input type="radio" value="Нет" name="bluetooth">
+          </fieldset>
+          <input type="submit" value="Показать">
+        </form>
+      </section>
+      <section class="main-sort">
+        <h2>Сортировка:</h2>
+        <ul>
+          <li>
+            <a class="active" href="#">По цене</a>
+          </li>
+          <li>
+            <a href="#">По типу</a>
+          </li>
+          <li>
+            <a href="#">По популярности</a>
+          </li>
+        </ul>
+        <div class="btn-leaf">
+          <a class="btn-up" href="#">up</a>
+          <a class="btn-down" href="#">down</a>
+        </div>
+      </section>
+      <section class="catalog-items">
+        <article class="object-item">
+          <a href="#">
+            <img src="http://placehold.it/150x200" alt="item-1">
+            <p>Любительская селфи-палка</p>
+            <span>500 руб.</span>
+          </a>
+        </article>
+        <article class="object-item">
+          <a href="#">
+            <img src="http://placehold.it/150x200" alt="item-2">
+            <p>
+              Профессиональная<br>
+              селфи-палка
+             </p>
+            <span>1500 руб.</span>
+          </a>
+        </article>
+        <article class="object-item">
+          <a href="#">
+            <img src="http://placehold.it/150x200" alt="item-3">
+            <p>Непотопляемая селфи-палка</p>
+            <span>2500 руб.</span>
+          </a>
+        </article>
+        <article class="object-item">
+          <a href="#">
+            <img src="http://placehold.it/150x200" alt="item-4">
+            <p>
+              Селфи-палка<br>
+              "Следуй за мной"
+           </p>
+            <span>4900 руб.</span>
+          </a>
+        </article>
+        <section class="catalog-nav">
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Назад</a>
+              </li>
+              <li>
+                <a>1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <li>
+                <a href="#">Вперед</a>
+              </li>
+          </nav>
+        </section>
+      </section>
+    </main>
+    <footer class="index-footer">
+      <section class="footer-address">
+        <a href="#">
+          <img src="http://placehold.it/100x50" alt="logo">
+        </a>
+        <p>
+          г. Москва, ул. Строителей, 15
+        </p>
+      </section>
+      <section class="user-block">
+        <a class="login" href="#">Войти</a>
+        <a class="compare" href="#">Сравнить</a>
+        <a class="basket" href="#">Корзина</a>
+      </section>
+      <section class="footer-links">
+        <a href="#">Доставка</a>
+        <a href="#">Гарантия</a>
+        <a href="#">Контакты</a>
+      </section>
+      <section class="telephone">
+        Тел.: +7 (495) 495-95-95
+      </section>
+      <section class="footer-social">
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </section>
+      <section class="copyright">
+        <a href="#">HTML Academy</a>
+      </section>
+    </footer>
+
+  </body>
+</html>
