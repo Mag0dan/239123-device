@@ -4,10 +4,334 @@ body {
   line-height: 30px;
   font-weight: normal;
   color: #464646;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 h2 {
   font-size: 47px;
   line-height: normal;
   color: #000;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.index-header .container{
+  width: 1040px;
+  background-color: #f7e296;
+  margin-top: 40px;
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  min-height: 299px;
+}
+
+.logo {
+  position: absolute;
+  top: 21px;
+  left: 155px;
+  z-index: 0;
+  font-size: 48px;
+}
+
+.hidden {
+  display: none;
+}
+
+.search-form {
+  float: left;
+  margin-bottom: 45px;
+}
+
+.user-block{
+  float: right;
+}
+
+.main-nav {
+  clear: both;
+}
+
+nav li {
+  display: inline;
+  font-size: 18px;
+}
+
+.index-main {
+  margin-bottom: 90px;
+}
+
+.main-item {
+  min-height: 400px;
+}
+
+.slider {
+  margin-bottom: 100px;
+}
+.slider-btn {
+  position: absolute;
+  top: 720px;
+  right: 200px;
+}
+
+.slider-btn li {
+  display: inline;
+}
+
+.slider img {
+  float: left;
+  margin-right: 106px;
+  margin-left: 90px;
+}
+
+.main-description {
+  float: right;
+  width: 500px;
+}
+
+.number-slide {
+  float: right;
+  font-size: 179px;
+}
+
+.main-description h2 {
+  float: left;
+  margin-bottom: 35px;
+}
+.main-description p {
+  float: left;
+  margin-bottom: 60px;
+}
+.main-description a {
+  float: left;
+  margin-bottom: 65px;
+}
+
+.main-features {
+  clear: both;
+}
+.main-features li {
+  display: inline-block;
+  width: 85px;
+  min-height: 60px;
+  vertical-align: top;
+}
+
+.main-features li:not(:last-of-type) {
+  margin-right: 70px;
+}
+
+.type-items {
+  font-size: 0;
+}
+
+.type-items a {
+  display: inline-block;
+  width: 160px;
+  min-height: 240px;
+  font-size: 15px;
+  vertical-align: top;
+}
+
+.type-items a:not(:last-of-type) {
+  margin-right: 40px;
+}
+
+.type-block {
+  width: 160px;
+  min-height: 160px;
+  background-color: #f7e296;
+  text-align: center;
+}
+
+.services {
+  min-height: 288px;
+  background-color: #e5e5e5;
+  margin-bottom: 100px;
+}
+
+.services-btn {
+  float: left;
+  width: 300px;
+}
+
+.services-item {
+  float: right;
+  width: 700px;
+  padding-left: 10px;
+  padding-right: 60px;
+}
+
+.services-item h2,
+.services-item p {
+  float: left;
+  width: 460px;
+  margin-bottom: 35px;
+}
+
+.services-item img {
+  float: right;
+}
+
+.partners {
+  margin-left: 60px;
+  margin-bottom: 100px;
+  font-size: 0;
+}
+
+.partners a {
+  display: inline-block;
+}
+
+.about-us {
+  float: left;
+  width: 460px;
+}
+
+.contacts {
+  float: right;
+  width: 560px;
+}
+
+.index-footer {
+  background-color: #464646;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-left {
+  float: left;
+  width: 340px;
+}
+
+.footer-center {
+  float: left;
+  width: 450px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-bottom: 60px;
+}
+
+.footer-right {
+  float: right;
+  width: 340px;
+  text-align: right;
+}
+
+.catalog-header .container {
+  width: 1040px;
+  background-color: #f7e296;
+  margin-top: 40px;
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  min-height: 186px;
+}
+
+.catalog-main {
+  padding-top: 40px;
+  padding-bottom: 73px;
+}
+
+.catalog-main h1 {
+  float: left;
+  margin-bottom: 35px;
+}
+
+.breadscrumbs {
+  clear: both;
+  margin-bottom: 50px;
+}
+
+.breadscrumbs li {
+  display: inline;
+}
+
+.main-filter {
+  float: left;
+  width: 328px;
+}
+.main-filter h2 {
+  background-color: #dcdcdc;
+  width: 328px;
+  min-height: 70px;
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-top:0;
+
+}
+.filter-form {
+  background-color: #ebebeb;
+  width: 258px;
+  padding-right: 70px;
+  min-height: 1114px;
+}
+
+.main-sort {
+  float: right;
+  width: 832px;
+  min-height: 70px;
+  background-color: #ebebeb;
+  margin-bottom: 70px;
+}
+
+.main-sort h2 {
+  float: left;
+  margin-left: 72px;
+  margin-right: 50px;
+  font-size: 16px;
+}
+
+.main-sort ul {
+  float: left;
+}
+
+.main-sort li {
+  display: inline;
+  margin-left: 28px;
+  font-size: 14px;
+}
+
+.btn-leaf {
+  float:right;
+}
+
+.catalog-items {
+  float: right;
+  width: 760px;
+  padding-left: 40px;
+  font-size: 0;
+}
+
+.object-item {
+  display: inline-block;
+  width: 360px;
+  min-height: 440px;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.object-item:not(:nth-child(2n)) {
+  margin-right: 40px;
+}
+
+.catalog-nav {
+  font-size: 14px;
+  background-color: #ebebeb;
+  width: 720px;
+}
+
+.catalog-nav li {
+  display: inline;
 }

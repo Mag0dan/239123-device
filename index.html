@@ -8,7 +8,7 @@
 </head>
 <body>
   <header class="index-header">
-    <div class="container">
+    <div class="container clearfix">
       <div class="logo">
         <a href="#">
           DEVICE
@@ -44,7 +44,7 @@
   </header>
   <main class="index-main">
     <div class="container">
-      <div class="slider">
+      <div class="slider clearfix">
         <ul class="slider-btn">
           <li>
             <button></button>
@@ -59,7 +59,7 @@
         <section class="main-item">
           <img src="img/slider-1.png" width="384" height="486" alt="slider-1">
           <div class="main-description">
-            <span>01</span>
+            <span class="number-slide">01</span>
             <h2>
               Делай селфи,<br>
               как Бен Стиллер!
@@ -69,7 +69,6 @@
               Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.
             </p>
             <a href="#">Подробнее</a>
-          </div>
           <ul class="main-features">
             <li>
               8,5 м<br>
@@ -84,8 +83,9 @@
               <span>Материал</span>
             </li>
           </ul>
+          </div>
         </section>
-        <section class="main-item">
+        <section class="main-item hidden">
           <img src="img/slider-2.png" width="345" height="485" alt="slider-2">
           <div class="main-description">
             <span>02</span>
@@ -106,7 +106,7 @@
             </li>
           </ul>
         </section>
-        <section class="main-item">
+        <section class="main-item hidden">
           <img src="img/slider-3.png" width="526" height="334" alt="slider-3">
           <div class="main-description">
             <span>03</span>
@@ -134,31 +134,43 @@
       </div>
       <section class="type-items">
         <a href="#">
+          <div class="type-block">
           <img src="img/popular-1.png" width="97" height="55" alt="virtual">
+          </div>
           Виртуальная реальность
         </a>
         <a href="#">
+          <div class="type-block">
           <img src="img/popular-2.png" width="86" height="117" alt="monopods">
+        </div>
           Моноподы для селфи
         </a>
         <a href="#">
+          <div class="type-block">
           <img src="img/popular-3.png" width="81" height="87" alt="cameras">
+        </div>
           Экшн-камеры
         </a>
         <a href="#">
+          <div class="type-block">
           <img src="img/popular-4.png" width="107" height="65" alt="bracelets">
+        </div>
           Фитнес браслеты
         </a>
         <a href="#">
+          <div class="type-block">
           <img src="img/popular-5.png" width="56" height="98" alt="clocks">
+        </div>
           Умные часы
         </a>
         <a href="#">
+          <div class="type-block">
           <img src="img/popular-6.png" width="132" height="69" alt="quadrocopters">
+        </div>
           Квадрокоптеры
         </a>
       </section>
-      <section class="services">
+      <section class="services clearfix">
         <ul class="services-btn">
           <li>
             <button>Доставка</button>
@@ -179,7 +191,7 @@
           </p>
           <img src="img/delivery.png" width="136" height="164" alt="courier">
         </section>
-        <section class="services-item">
+        <section class="services-item hidden">
           <h2>Гарантия</h2>
           <p>
             Если из-за возгарания купленного у нас товара у вас сгорит
@@ -188,7 +200,7 @@
           </p>
           <img src="img/warranty.png" width="171" height="195" alt="guarantee">
         </section>
-        <section class="services-item">
+        <section class="services-item hidden">
           <h2>Кредит</h2>
           <p>
             Залезть в долговую яму стало проще! Кредитные
@@ -212,7 +224,7 @@
           <img src="img/logo-4-1.jpg" width="260" height="100" alt="vive">
         </a>
       </section>
-      <section class="about-company">
+      <section class="about-company clearfix">
         <div class="about-us">
           <h2>О нас</h2>
           <p>
@@ -249,7 +261,7 @@
       </section>
     </div>
   </main>
-  <footer class="index-footer">
+  <footer class="index-footer clearfix">
     <div class="container">
       <div class="footer-left">
         <a href="#">
@@ -272,7 +284,7 @@
         </section>
       </div>
       <div class="footer-right">
-        <section class="user-block">
+        <section class="footer-user-block">
           <a class="login" href="#">Войти</a>
           <a class="compare" href="#">Сравнить</a>
           <a class="basket" href="#">Корзина</a>
