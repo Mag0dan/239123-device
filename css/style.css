@@ -4,8 +4,6 @@ body {
   line-height: 30px;
   font-weight: normal;
   color: #464646;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 h2 {
@@ -21,24 +19,27 @@ h2 {
 }
 
 .container {
-  width: 1160px;
   margin: 0 auto;
 }
 
-.index-header .container{
-  width: 1040px;
+.index-header {
+  position: relative;
+  width: 1160px;
   background-color: #f7e296;
   margin-top: 40px;
   padding-top: 50px;
+  min-height: 299px;
+}
+
+.center {
   padding-left: 60px;
   padding-right: 60px;
-  min-height: 299px;
 }
 
 .logo {
   position: absolute;
-  top: 21px;
-  left: 155px;
+  top: -15px;
+  left: 60px;
   z-index: 0;
   font-size: 48px;
 }
@@ -61,35 +62,38 @@ h2 {
 }
 
 nav li {
-  display: inline;
+  display: inline-block;
   font-size: 18px;
 }
 
 .index-main {
+  width: 1160px;
   margin-bottom: 90px;
 }
 
 .main-item {
+  position: relative;
   min-height: 400px;
+  top: -70px;
 }
 
 .slider {
   margin-bottom: 100px;
 }
+
 .slider-btn {
   position: absolute;
-  top: 720px;
+  bottom: -20px;
   right: 200px;
 }
 
 .slider-btn li {
-  display: inline;
+  display: inline-block;
 }
 
 .slider img {
   float: left;
-  margin-right: 106px;
-  margin-left: 90px;
+  text-align: center;
 }
 
 .main-description {
@@ -98,46 +102,47 @@ nav li {
 }
 
 .number-slide {
-  float: right;
-  font-size: 179px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 179.2px;
 }
 
 .main-description h2 {
-  float: left;
   margin-bottom: 35px;
 }
 .main-description p {
-  float: left;
   margin-bottom: 60px;
-}
-.main-description a {
-  float: left;
-  margin-bottom: 65px;
 }
 
 .main-features {
-  clear: both;
+  margin-top: 65px;
+  margin-left: -40px;
 }
+
 .main-features li {
   display: inline-block;
-  width: 85px;
-  min-height: 60px;
   vertical-align: top;
+  font-size: 36px;
 }
 
 .main-features li:not(:last-of-type) {
   margin-right: 70px;
 }
 
+.main-features span {
+  font-size: 13px;
+}
+
 .type-items {
   font-size: 0;
+  margin-bottom: 185px;
 }
 
 .type-items a {
   display: inline-block;
   width: 160px;
-  min-height: 240px;
-  font-size: 15px;
+  font-size: 18px;
   vertical-align: top;
 }
 
@@ -153,7 +158,6 @@ nav li {
 }
 
 .services {
-  min-height: 288px;
   background-color: #e5e5e5;
   margin-bottom: 100px;
 }
@@ -207,6 +211,10 @@ nav li {
   padding-bottom: 60px;
 }
 
+.content-zone {
+  width: 1160px;
+}
+
 .footer-left {
   float: left;
   width: 340px;
@@ -216,7 +224,6 @@ nav li {
   float: left;
   width: 450px;
   text-align: center;
-  margin: 0 auto;
 }
 
 .footer-links {
@@ -229,33 +236,33 @@ nav li {
   text-align: right;
 }
 
-.catalog-header .container {
-  width: 1040px;
+.catalog-header {
+  position: relative;
+  width: 1160px;
   background-color: #f7e296;
   margin-top: 40px;
   padding-top: 50px;
-  padding-left: 60px;
-  padding-right: 60px;
   min-height: 186px;
 }
 
 .catalog-main {
+  width: 1160px;
   padding-top: 40px;
   padding-bottom: 73px;
 }
 
 .catalog-main h1 {
-  float: left;
+  margin-left: 60px;
   margin-bottom: 35px;
 }
 
 .breadscrumbs {
-  clear: both;
+  margin-left: 20px;
   margin-bottom: 50px;
 }
 
 .breadscrumbs li {
-  display: inline;
+  display: inline-block;
 }
 
 .main-filter {
@@ -279,8 +286,6 @@ nav li {
 }
 
 .main-sort {
-  float: right;
-  width: 832px;
   min-height: 70px;
   background-color: #ebebeb;
   margin-bottom: 70px;
@@ -298,19 +303,18 @@ nav li {
 }
 
 .main-sort li {
-  display: inline;
+  display: inline-block;
   margin-left: 28px;
   font-size: 14px;
 }
 
 .btn-leaf {
-  float:right;
+
 }
 
 .catalog-items {
   float: right;
-  width: 760px;
-  padding-left: 40px;
+  width: 832px;
   font-size: 0;
 }
 
@@ -322,16 +326,24 @@ nav li {
   vertical-align: top;
 }
 
-.object-item:not(:nth-child(2n)) {
+.object-item:nth-of-type(2n+1) {
+  margin-left: 72px;
   margin-right: 40px;
 }
 
+
 .catalog-nav {
-  font-size: 14px;
+  font-size: 0;
   background-color: #ebebeb;
+  margin-left: 72px;
   width: 720px;
+  min-height: 20px;
+  padding: 25px;
+  vertical-align: middle;
 }
 
 .catalog-nav li {
-  display: inline;
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 20px;
 }

@@ -6,8 +6,8 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="catalog-header">
-    <div class="container clearfix">
+  <header class="catalog-header container">
+    <div class="center container clearfix">
       <div class="logo">
         <a href="#">
           DEVICE
@@ -48,7 +48,7 @@
       </nav>
     </div>
   </header>
-  <main class="catalog-main">
+  <main class="catalog-main container">
     <div class="container clearfix">
       <h1>Моноподы для селфи</h1>
       <ul class="breadscrumbs">
@@ -62,24 +62,6 @@
           <a>Моноподы для селфи</a>
         </li>
       </ul>
-      <section class="main-sort">
-        <h2>Сортировка:</h2>
-        <ul>
-          <li>
-            <a class="active" href="#">По цене</a>
-          </li>
-          <li>
-            <a href="#">По типу</a>
-          </li>
-          <li>
-            <a href="#">По популярности</a>
-          </li>
-        </ul>
-        <div class="btn-leaf">
-          <a class="btn-up" href="#">up</a>
-          <a class="btn-down" href="#">down</a>
-        </div>
-      </section>
       <section class="main-filter">
         <h2>Фильтр</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
@@ -125,9 +107,29 @@
         </form>
       </section>
       <section class="catalog-items">
+        <div class="main-sort">
+          <h2>Сортировка:</h2>
+          <ul>
+            <li>
+              <a class="active" href="#">По цене</a>
+            </li>
+            <li>
+              <a href="#">По типу</a>
+            </li>
+            <li>
+              <a href="#">По популярности</a>
+            </li>
+            <li>
+              <a class="btn-leaf btn-up" href="#">up</a>
+            </li>
+            <li>
+              <a class="btn-leaf btn-down" href="#">down</a>
+            </li>
+          </ul>
+        </div>
         <article class="object-item">
           <img src="img/item-1.jpg" width="360" height="380" alt="item-1">
-          <div class="img-hover hidden">
+          <div class="img-hover">
             <a href="#">В корзину</a>
             <a href="#">Добавить к сравнению</a>
           </div>
@@ -136,7 +138,7 @@
         </article>
         <article class="object-item">
           <img src="img/item-2.jpg" width="360" height="380" alt="item-2">
-          <div class="img-hover hidden">
+          <div class="img-hover">
             <a href="#">В корзину</a>
             <a href="#">Добавить к сравнению</a>
           </div>
@@ -148,7 +150,7 @@
         </article>
         <article class="object-item">
           <img src="img/item-3.jpg" width="360" height="380" alt="item-3">
-          <div class="img-hover hidden">
+          <div class="img-hover">
             <a href="#">В корзину</a>
             <a href="#">Добавить к сравнению</a>
           </div>
@@ -157,7 +159,7 @@
         </article>
         <article class="object-item">
           <img src="img/item-4.jpg" width="360" height="380" alt="item-4">
-          <div class="img-hover hidden">
+          <div class="img-hover">
             <a href="#">В корзину</a>
             <a href="#">Добавить к сравнению</a>
           </div>
@@ -187,8 +189,8 @@
       </section>
     </div>
   </main>
-  <footer class="index-footer clearfix">
-    <div class="container">
+  <footer class="index-footer">
+    <div class="container content-zone clearfix">
       <div class="footer-left">
         <a href="#">
           DEVICE
