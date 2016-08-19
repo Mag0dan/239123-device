@@ -7,7 +7,7 @@
 </head>
 <body>
   <header class="catalog-header container">
-    <div class="center container clearfix">
+    <div class="center clearfix">
       <div class="logo">
         <a href="#">
           DEVICE
@@ -48,8 +48,7 @@
       </nav>
     </div>
   </header>
-  <main class="catalog-main container">
-    <div class="container clearfix">
+  <main class="catalog-main container clearfix">
       <h1>Моноподы для селфи</h1>
       <ul class="breadscrumbs">
         <li>
@@ -62,71 +61,72 @@
           <a>Моноподы для селфи</a>
         </li>
       </ul>
-      <section class="main-filter">
-        <h2>Фильтр</h2>
-        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
-            <legend class="form-legend">Стоимость</legend>
-            <input type="range" min="0" max="10000" value="5000" name="cost">
-          </fieldset>
-          <fieldset>
-            <legend class="form-legend">Цвет</legend>
-            <label>
-              <input type="checkbox" name="black" checked>
-              Чёрный
-            </label>
-            <label>
-              <input type="checkbox" name="white">
-              Белый
-            </label>
-            <label>
-              <input type="checkbox" name="blue" checked>
-              Синий
-            </label>
-            <label>
-              <input type="checkbox" name="red" checked>
-              Красный
-            </label>
-            <label>
-              <input type="checkbox" name="pink">
-              Розовый
-            </label>
-          </fieldset>
-          <fieldset>
-            <legend class="form-legend">Bluetooth</legend>
-            <label>
-              <input type="radio" value="Есть" name="bluetooth" checked>
-              Есть
-            </label>
-            <label>
-              <input type="radio" value="Нет" name="bluetooth">
-              Нет
-            </label>
-          </fieldset>
-          <input type="submit" value="Показать">
-        </form>
-      </section>
-      <section class="catalog-items">
-        <div class="main-sort">
-          <h2>Сортировка:</h2>
-          <ul>
-            <li>
-              <a class="active" href="#">По цене</a>
-            </li>
-            <li>
-              <a href="#">По типу</a>
-            </li>
-            <li>
-              <a href="#">По популярности</a>
-            </li>
-            <li>
-              <a class="btn-leaf btn-up" href="#">up</a>
-            </li>
-            <li>
-              <a class="btn-leaf btn-down" href="#">down</a>
-            </li>
-          </ul>
-        </div>
+    <section class="main-filter">
+        <h2>Фильтр:</h2>
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend class="form-legend">Стоимость</legend>
+          <input type="range" min="0" max="10000" value="5000" name="cost">
+        </fieldset>
+        <fieldset>
+          <legend class="form-legend">Цвет</legend>
+          <label>
+            <input type="checkbox" name="black" checked>
+            Чёрный
+          </label>
+          <label>
+            <input type="checkbox" name="white">
+            Белый
+          </label>
+          <label>
+            <input type="checkbox" name="blue" checked>
+            Синий
+          </label>
+          <label>
+            <input type="checkbox" name="red" checked>
+            Красный
+          </label>
+          <label>
+            <input type="checkbox" name="pink">
+            Розовый
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend class="form-legend">Bluetooth</legend>
+          <label>
+            <input type="radio" value="Есть" name="bluetooth" checked>
+            Есть
+          </label>
+          <label>
+            <input type="radio" value="Нет" name="bluetooth">
+            Нет
+          </label>
+        </fieldset>
+        <input type="submit" value="Показать">
+      </form>
+    </section>
+    <section class="catalog-items">
+      <div class="main-sort">
+        <h2>Сортировка:</h2>
+        <ul>
+          <li>
+            <a class="active" href="#">По цене</a>
+          </li>
+          <li>
+            <a href="#">По типу</a>
+          </li>
+          <li>
+            <a href="#">По популярности</a>
+          </li>
+          <li>
+            <a class="btn-leaf btn-up" href="#">up</a>
+          </li>
+          <li>
+            <a class="btn-leaf btn-down" href="#">down</a>
+          </li>
+        </ul>
+      </div>
+      <div class="all-items">
         <article class="object-item">
           <img src="img/item-1.jpg" width="360" height="380" alt="item-1">
           <div class="img-hover">
@@ -169,25 +169,25 @@
           </h3>
           <span>4900 руб.</span>
         </article>
-        <ul class="catalog-nav">
-          <li>
-            <a href="#">Назад</a>
-          </li>
-          <li>
-            <a>1</a>
-          </li>
-          <li>
-            <a href="#">2</a>
-          </li>
-          <li>
-            <a href="#">3</a>
-          </li>
-          <li>
-            <a href="#">Вперед</a>
-          </li>
-        </ul>
-      </section>
-    </div>
+      </div>
+      <ul class="catalog-nav">
+        <li>
+          <a href="#">Назад</a>
+        </li>
+        <li>
+          <a>1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">Вперед</a>
+        </li>
+      </ul>
+    </section>
   </main>
   <footer class="index-footer">
     <div class="container content-zone clearfix">

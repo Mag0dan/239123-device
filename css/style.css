@@ -19,12 +19,12 @@ h2 {
 }
 
 .container {
+  width: 1160px;
   margin: 0 auto;
 }
 
 .index-header {
   position: relative;
-  width: 1160px;
   background-color: #f7e296;
   margin-top: 40px;
   padding-top: 50px;
@@ -57,8 +57,9 @@ h2 {
   float: right;
 }
 
-.main-nav {
+.main-nav ul {
   clear: both;
+  padding-left: 0px;
 }
 
 nav li {
@@ -67,17 +68,19 @@ nav li {
 }
 
 .index-main {
-  width: 1160px;
   margin-bottom: 90px;
 }
 
 .main-item {
   position: relative;
+  padding-left: 80px;
+  padding-right: 80px;
   min-height: 400px;
   top: -70px;
 }
 
 .slider {
+
   margin-bottom: 100px;
 }
 
@@ -113,6 +116,10 @@ nav li {
 }
 .main-description p {
   margin-bottom: 60px;
+}
+
+.main-description a {
+  margin-bottom: 65px;
 }
 
 .main-features {
@@ -151,15 +158,23 @@ nav li {
 }
 
 .type-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 160px;
   min-height: 160px;
   background-color: #f7e296;
   text-align: center;
 }
 
+.m-type-block-selfie {
+  align-items: flex-end;
+}
+
 .services {
   background-color: #e5e5e5;
   margin-bottom: 100px;
+
 }
 
 .services-btn {
@@ -186,7 +201,6 @@ nav li {
 }
 
 .partners {
-  margin-left: 60px;
   margin-bottom: 100px;
   font-size: 0;
 }
@@ -209,10 +223,6 @@ nav li {
   background-color: #464646;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.content-zone {
-  width: 1160px;
 }
 
 .footer-left {
@@ -308,14 +318,14 @@ nav li {
   font-size: 14px;
 }
 
-.btn-leaf {
-
-}
-
 .catalog-items {
   float: right;
   width: 832px;
   font-size: 0;
+}
+
+.all-items {
+  padding-left: 72px;
 }
 
 .object-item {
@@ -327,7 +337,6 @@ nav li {
 }
 
 .object-item:nth-of-type(2n+1) {
-  margin-left: 72px;
   margin-right: 40px;
 }
 
@@ -335,6 +344,7 @@ nav li {
 .catalog-nav {
   font-size: 0;
   background-color: #ebebeb;
+  margin-top: 35px;
   margin-left: 72px;
   width: 720px;
   min-height: 20px;
