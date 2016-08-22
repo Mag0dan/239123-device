@@ -101,32 +101,32 @@ h2 {
   position: relative;
   margin-bottom: 45px;
   padding-left: 40px;
-  width: 440px;
-  min-height: 49px;
+  width: 400px;
+  height: 47px;
   line-height: 36px;
 }
 
 .search-form::before {
   content: "";
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   position: absolute;
   top: 50%;
-  left: 2px;
-  transform: translate(0, -50%) translateY(-2px);
+  left: 0px;
+  transform: translateY(-50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: -5px -341px;
-
+  background-position: -4px -340px;
 }
 
 .search-form input[type="search"] {
   background-color: #f7e296;
   opacity: 0.3;
   border: none;
-  width: 300px;
-  min-height: 44px;
+  width: 315px;
+  min-height: 49px;
   border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
 }
 
 .search-form input[type="search"]:hover {
@@ -142,9 +142,9 @@ h2 {
 .search-form input[type="submit"] {
   display: none;
   border: 2px solid black;
-  width: 82px;
-  height: 45px;
-  margin-left: -3px;
+  width: 85px;
+  height: 49px;
+  margin-left: -4px;
   background-color: #f7e296;
   cursor: pointer;
 }
@@ -174,61 +174,38 @@ h2 {
   margin-left: 40px;
   padding-left: 25px;
   line-height: 36px;
+  position: relative;
+  float: right;
 }
 
-.user-block .enter {
-  position: relative;
+a.enter {
   float: left;
   margin-left: 0;
 }
 
-.enter::before {
+.user-block a::before {
   content: "";
   position: absolute;
   top: 50%;
   left: 0;
-  width: 13px;
+  width: 14px;
   height: 12px;
   transform: translateY(-50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: -5px -415px;
 }
 
-.user-block .basket {
-  position: relative;
-  float: right;
+.enter::before {
+  background-position: -4px -415px;
 }
 
 .basket::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 12px;
-  height: 12px;
-  transform: translateY(-50%);
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position: -5px -5px;
+  background-position: -4px -5px;
 }
 
-.user-block .compare {
-  position: relative;
-  float: right;
-}
 
 .compare::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 12px;
-  height: 12px;
-  transform: translateY(-50%);
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position: -5px -71px;
+  background-position: -4px -71px;
 }
 
 .user-block a:hover {
@@ -316,7 +293,7 @@ h2 {
 .catalog-add {
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 5;
   bottom: 0;
   left: 0;
   font-size: 0;
@@ -324,7 +301,7 @@ h2 {
   background-color: #f7e296;
   width: 1160px;
   min-height: 148px;
-  padding-top: 35px;
+  padding-top: 40px;
 
 }
 
@@ -358,7 +335,6 @@ h2 {
 
 .main-item {
   position: relative;
-  padding-left: 80px;
   padding-right: 60px;
   min-height: 400px;
   top: -109px;
@@ -368,18 +344,59 @@ h2 {
   position: relative;
 }
 
+.main-item img {
+  float: left;
+}
+
+.slider-first {
+  padding-left: 85px;
+}
+
+.slider-second img {
+  padding-top: 10px;
+  padding-left: 110px;
+}
+
+.slider-third img {
+  padding-top: 63px;
+  padding-left: 30px;
+}
+
 .slider-btn {
   position: absolute;
-  bottom: 250px;
-  right: 80px;
+  z-index: 3;
+  bottom: 253px;
+  right: 85px;
+  padding-left: 0;
+  font-size: 0;
+  vertical-align: baseline;
 }
 
 .slider-btn li {
   display: inline-block;
+  margin-left: 23px;
 }
 
-.slider img {
-  float: left;
+.slider-btn li:first-child {
+  margin-left: 0;
+}
+
+.slider-btn button {
+  padding: 2px;
+  outline: none;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.slider-btn button:hover {
+  opacity: 0.4
+}
+
+.slider-btn button:active {
+  opacity: 1;
 }
 
 .main-description {
@@ -401,6 +418,7 @@ h2 {
 
 .number-slide {
   position: absolute;
+  z-index: 1;
   right: -10px;
   top: -15px;
   font-family: "Gilroy ExtraBold";
@@ -410,6 +428,8 @@ h2 {
 }
 
 .main-description h2 {
+  position: relative;
+  z-index: 2;
   margin-bottom: 25px;
 }
 .main-description p {
@@ -452,7 +472,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 20%;
-  background-color: #fce520;
+  background-color: #f0c52e;
   transition: all 0.2s ease-in;
 }
 
@@ -524,6 +544,7 @@ h2 {
   background-color: #f7e296;
   text-align: center;
   margin-bottom: 35px;
+  transition: background-color 0.2s ease-in;
 }
 
 .m-type-block-selfie {
@@ -574,7 +595,7 @@ h2 {
   font-size: 18px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  transition: all 0.2s ease-in;
+  transition: color 0.1s ease-in;
 }
 
 .services-btn button::before {
@@ -587,7 +608,11 @@ h2 {
   left: 0;
   z-index: -1;
   background-color: #f0c52e;
-  transition: all 0.2s ease-in;
+  transition:
+    top 0.2s ease-in,
+    height 0.2s ease-in,
+    width 0.1s ease-in,
+    background-color 0.1s ease-in;
 }
 
 .services-btn button:hover::before {
@@ -670,13 +695,15 @@ h2 {
   opacity: 0;
 }
 
+.partners img {
+  transition: opacity 0.2s ease-in;
+}
+
 .partners a:hover img:first-child {
-  transition: opacity 0.5s ease-in;
   opacity: 0;
 }
 
 .partners a:hover img:last-child {
-  transition: opacity 0.5s ease-in;
   opacity: 1;
 }
 
@@ -763,6 +790,14 @@ h2 {
   text-decoration: none;
 }
 
+.footer-left a:hover {
+  color: #f0c52e;
+}
+
+.footer-left a:active {
+  opacity: 0.3;
+}
+
 .footer-left p {
   line-height: 30px;
   color: #ffffff;
@@ -827,7 +862,7 @@ h2 {
 
 .social-btn-fb {
   margin-right: 15px;
-  background-position: -5px -131px;
+  background-position: -4px -131px;
 }
 
 .social-btn-inst {
@@ -836,7 +871,7 @@ h2 {
 }
 
 .social-btn-tw {
-  background-position: -5px -367px;
+  background-position: -4px -367px;
 }
 
 .social-btn:hover {
@@ -883,42 +918,42 @@ h2 {
 }
 
 .login-1::before {
-  width: 13px;
+  width: 14px;
   height: 12px;
 }
 
 .compare-1::before {
-  width: 10px;
+  width: 12px;
   height: 10px;
 }
 
 .basket-1::before {
-  width: 12px;
+  width: 13px;
   height: 12px;
 }
 
 .login-1::before {
-  background-position: -5px -437px;
+  background-position: -4px -437px;
 }
 
 .login-1:hover::before {
-  background-position: -5px -459px;
+  background-position: -4px -459px;
 }
 
 .compare-1::before {
-  background-position: -5px -91px;
+  background-position: -4px -91px;
 }
 
 .compare-1:hover::before {
-  background-position: -5px -111px;
+  background-position: -4px -111px;
 }
 
 .basket-1::before {
-  background-position: -5px -27px;
+  background-position: -4px -27px;
 }
 
 .basket-1:hover::before {
-  background-position: -5px -49px;
+  background-position: -4px -49px;
 }
 
 .footer-user-block a:hover {
@@ -937,16 +972,16 @@ h2 {
 .copyright a {
   display: inline-block;
   width: 27px;
-  height: 34px;
+  height: 36px;
   font-size: 0;
   text-decoration: none;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: -5px -179px;
+  background-position: -5px -178px;
 }
 
 .copyright a:hover {
-  background-position: -5px -223px;
+  background-position: -5px -222px;
 }
 
 .copyright a:active {
