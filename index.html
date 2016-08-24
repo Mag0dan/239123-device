@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -8,6 +7,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <input type="radio" id="btn-1" name="toggle" checked>
+  <input type="radio" id="btn-2" name="toggle">
+  <input type="radio" id="btn-3" name="toggle">
   <header class="index-header container">
     <div class="center clearfix">
       <div class="logo">
@@ -32,10 +34,8 @@
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Фитнесс-браслеты</a></li>
               <li><a href="#">Квадрокоптеры</a></li>
-              <br>
               <li><a href="#">Моноподы для селфи</a></li>
               <li><a href="#">Умные часы</a></li>
-              <br>
               <li><a href="#">Экшн-камеры</a></li>
             </ul>
           </li>
@@ -47,19 +47,19 @@
     </div>
   </header>
   <main class="index-main">
-    <div class="slider container clearfix">
+    <div class="slider container">
       <ul class="slider-btn">
         <li>
-          <button></button>
+          <label for="btn-1"></label>
         </li>
         <li>
-          <button></button>
+          <label for="btn-2"></label>
         </li>
         <li>
-          <button></button>
+          <label for="btn-3"></label>
         </li>
       </ul>
-      <section class="main-item slider-first hidden">
+      <section class="main-item slider-first clearfix" id="slide1">
         <img src="img/slider-1.png" width="384" height="486" alt="slider-1">
         <div class="main-description">
           <span class="number-slide">01</span>
@@ -89,7 +89,7 @@
           </ul>
         </div>
       </section>
-      <section class="main-item slider-second hidden">
+      <section class="main-item slider-second clearfix" id="slide2">
         <img src="img/slider-2.png" width="345" height="485" alt="slider-2">
         <div class="main-description">
           <span class="number-slide">02</span>
@@ -110,7 +110,7 @@
           </ul>
         </div>
       </section>
-      <section class="main-item slider-third">
+      <section class="main-item slider-third clearfix" id="slide3">
         <img src="img/slider-3.png" width="526" height="334" alt="slider-3">
         <div class="main-description">
           <span class="number-slide">03</span>
@@ -175,8 +175,8 @@
         Квадрокоптеры
       </a>
     </section>
-    <section class="services clearfix">
-      <div class="container">
+    <section class="services">
+      <div class="container clearfix">
         <ul class="services-btn">
           <li>
             <button>Доставка</button>
