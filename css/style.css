@@ -421,15 +421,15 @@ a.exit {
   opacity: 0.4
 }
 
-#btn-1:checked ~ .index-main label[for="btn-1"],
-#btn-2:checked ~ .index-main label[for="btn-2"],
-#btn-3:checked ~ .index-main label[for="btn-3"] {
+#main-item-btn-1:checked ~ .index-main label[for="main-item-btn-1"],
+#main-item-btn-2:checked ~ .index-main label[for="main-item-btn-2"],
+#main-item-btn-3:checked ~ .index-main label[for="main-item-btn-3"] {
   opacity: 1;
 }
 
-#btn-1:checked ~ .index-main #slide1,
-#btn-2:checked ~ .index-main #slide2,
-#btn-3:checked ~ .index-main #slide3 {
+#main-item-btn-1:checked ~ .index-main #slide-1,
+#main-item-btn-2:checked ~ .index-main #slide-2,
+#main-item-btn-3:checked ~ .index-main #slide-3 {
   display: block;
 }
 
@@ -473,13 +473,12 @@ a.exit {
 
 .main-description a {
   margin-bottom: 45px;
+  width: 220px;
 }
 
 .device-btn {
   position: relative;
   display: inline-block;
-  padding-left: 40px;
-  padding-right: 40px;
   padding-top: 9px;
   padding-bottom: 9px;
   height: 22px;
@@ -490,6 +489,7 @@ a.exit {
   text-transform: uppercase;
   letter-spacing: 3px;
   vertical-align: top;
+  text-align: center;
 }
 
 .device-btn:active {
@@ -615,11 +615,14 @@ a.exit {
   margin-bottom: 30px;
 }
 
-.services-btn button {
+.services-btn label {
+  display: inline-block;
   position: relative;
   z-index: 0;
   width: 160px;
-  height: 40px;
+  height: 22px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border: none;
   outline: none;
   background-color: transparent;
@@ -628,9 +631,11 @@ a.exit {
   letter-spacing: 3px;
   text-transform: uppercase;
   cursor: pointer;
+  text-align: center;
+  color: #000000;
 }
 
-.services-btn button::before {
+.services-btn label::before {
   content: "";
   display: block;
   width: 100%;
@@ -645,23 +650,35 @@ a.exit {
     height 0.2s ease-in;
 }
 
-.services-btn button:hover::before {
+.services-btn label:hover::before {
   height: 100%;
   top: 0;
 }
 
-.services-btn button:active::before {
+#services-btn-1:checked ~ .index-main label[for="services-btn-1"],
+#services-btn-2:checked ~ .index-main label[for="services-btn-2"],
+#services-btn-3:checked ~ .index-main label[for="services-btn-3"] {
+  color: #f7e184;
+}
+
+#services-btn-1:checked ~ .index-main label[for="services-btn-1"]::before,
+#services-btn-2:checked ~ .index-main label[for="services-btn-2"]::before,
+#services-btn-3:checked ~ .index-main label[for="services-btn-3"]::before {
   width: 280px;
   height: 100%;
   top: 0;
   background-color: #000000;
 }
 
-.services-btn button:active {
-  color: #f7e184;
+
+#services-btn-1:checked ~ .index-main #services-courier,
+#services-btn-2:checked ~ .index-main #services-warranty,
+#services-btn-3:checked ~ .index-main #services-credit {
+  display: block;
 }
 
 .services-item {
+  display: none;
   position: relative;
   float: right;
   width: 700px;
@@ -782,6 +799,10 @@ a.exit {
   padding-left: 35px;
 }
 
+.about-us a {
+  width: 260px;
+}
+
 .about-us li::before {
   content: "";
   position: absolute;
@@ -796,6 +817,10 @@ a.exit {
 
 .contacts img {
   margin-bottom: 69px;
+}
+
+.contacts a {
+  width: 260px;
 }
 
 .index-footer {
@@ -1019,6 +1044,150 @@ a.exit {
   opacity: 0.3;
 }
 
+.modal-write-us {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 760px;
+  min-height: 380px;
+  background-color: #ffffff;
+  z-index: 20;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 95px;
+  padding-bottom: 78px;
+  box-shadow:
+    -40px 0px 40px -40px rgba(2, 4, 6, 0.75),
+    40px 0px 40px -40px rgba(2, 4, 6, 0.75),
+    0 8px 20px 2px rgba(2, 4, 6, 0.2);
+
+
+}
+
+.modal-close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 54px;
+  height: 54px;
+  background-color: #f7e296;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.modal-close::after,
+.modal-close::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 32px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.modal-close::after {
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.modal-close::before {
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.form-write-us {
+  font-size: 0;
+}
+
+.form-write-us label {
+  font-family: "Gilroy ExtraBold";
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 40px;
+}
+
+.form-write-us-name,
+.form-write-us-email {
+  display: inline-block;
+  width: 360px;
+}
+
+.form-write-us-name input,
+.form-write-us-email input {
+  margin-top: 13px;
+  padding-left: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 360px;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.form-write-us-name {
+  margin-right: 40px;
+}
+
+.form-write-us-letter textarea {
+  margin-top: 13px;
+  width: 740px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 124px;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.form-write-us button {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  margin-top: 40px;
+  font-family: "Gilroy ExtraBold";
+  font-size: 18px;
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-write-us button::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  height: 20%;
+  background-color: #f0c52e;
+  transition:
+    top 0.2s ease-in,
+    height 0.2s ease-in;
+}
+
+.form-write-us button:hover::before {
+  top: 0;
+  height: 100%;
+}
+
 .catalog-header {
   position: relative;
   width: 1160px;
@@ -1163,7 +1332,7 @@ a.exit {
 .range-controls .toggle:active {
   background-color: #7eae29;
   border: 3px solid white;
-  box-shadow: 0 5px 5px -4px black;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.75);
 }
 
 .range-controls .toggle-min {

@@ -7,9 +7,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <input type="radio" id="btn-1" name="toggle" checked>
-  <input type="radio" id="btn-2" name="toggle">
-  <input type="radio" id="btn-3" name="toggle">
+  <input type="radio" id="main-item-btn-1" name="main-item-toggle" checked>
+  <input type="radio" id="main-item-btn-2" name="main-item-toggle">
+  <input type="radio" id="main-item-btn-3" name="main-item-toggle">
+  <input type="radio" id="services-btn-1" name="services-toggle" checked>
+  <input type="radio" id="services-btn-2" name="services-toggle">
+  <input type="radio" id="services-btn-3" name="services-toggle">
   <header class="index-header container">
     <div class="center clearfix">
       <div class="logo">
@@ -34,7 +37,7 @@
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Фитнесс-браслеты</a></li>
               <li><a href="#">Квадрокоптеры</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="catalog.html">Моноподы для селфи</a></li>
               <li><a href="#">Умные часы</a></li>
               <li><a href="#">Экшн-камеры</a></li>
             </ul>
@@ -50,16 +53,16 @@
     <div class="slider container">
       <ul class="slider-btn">
         <li>
-          <label for="btn-1"></label>
+          <label for="main-item-btn-1"></label>
         </li>
         <li>
-          <label for="btn-2"></label>
+          <label for="main-item-btn-2"></label>
         </li>
         <li>
-          <label for="btn-3"></label>
+          <label for="main-item-btn-3"></label>
         </li>
       </ul>
-      <section class="main-item slider-first clearfix" id="slide1">
+      <section class="main-item slider-first clearfix" id="slide-1">
         <img src="img/slider-1.png" width="384" height="486" alt="slider-1">
         <div class="main-description">
           <span class="number-slide">01</span>
@@ -89,7 +92,7 @@
           </ul>
         </div>
       </section>
-      <section class="main-item slider-second clearfix" id="slide2">
+      <section class="main-item slider-second clearfix" id="slide-2">
         <img src="img/slider-2.png" width="345" height="485" alt="slider-2">
         <div class="main-description">
           <span class="number-slide">02</span>
@@ -110,7 +113,7 @@
           </ul>
         </div>
       </section>
-      <section class="main-item slider-third clearfix" id="slide3">
+      <section class="main-item slider-third clearfix" id="slide-3">
         <img src="img/slider-3.png" width="526" height="334" alt="slider-3">
         <div class="main-description">
           <span class="number-slide">03</span>
@@ -143,7 +146,7 @@
         </div>
         Виртуальная реальность
       </a>
-      <a href="#">
+      <a href="catalog.html">
         <div class="type-block m-type-block-selfie">
           <img src="img/popular-2.png" width="86" height="117" alt="monopods">
         </div>
@@ -179,16 +182,16 @@
       <div class="container clearfix">
         <ul class="services-btn">
           <li>
-            <button>Доставка</button>
+            <label for="services-btn-1">Доставка</label>
           </li>
           <li>
-            <button>Гарантия</button>
+            <label for="services-btn-2">Гарантия</label>
           </li>
           <li>
-            <button>Кредит</button>
+            <label for="services-btn-3">Кредит</label>
           </li>
         </ul>
-        <section class="services-item courier">
+        <section class="services-item courier" id="services-courier">
           <h2>Доставка</h2>
           <p>
             Мы с удовольствием доставим ваш товар прямо к вашему
@@ -196,7 +199,7 @@
             заработаем, поднимая его на ваш этаж.
           </p>
         </section>
-        <section class="services-item warranty hidden">
+        <section class="services-item warranty" id="services-warranty">
           <h2>Гарантия</h2>
           <p>
             Если из-за возгарания купленного у нас товара у вас сгорит
@@ -204,7 +207,7 @@
             Товар, не дом, конечно же.
           </p>
         </section>
-        <section class="services-item credit hidden">
+        <section class="services-item credit" id="services-credit">
           <h2>Кредит</h2>
           <p>
             Залезть в долговую яму стало проще! Кредитные
@@ -305,11 +308,23 @@
       </div>
     </div>
   </footer>
-  <form class="write-us hidden" action="https://echo.htmlacademy.ru" method="post">
-    <label><input type="text">Ваше имя:</label>
-    <label><input type="text">Ваш e-mail:</label>
-    <label><input type="text">Текст письма:</label>
-    <input type="submit" value="Отправить">
-  </form>
+  <div class="modal-write-us hidden">
+    <button class="modal-close" type="button" tittle="Закрыть">Закрыть</button>
+    <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
+      <label class="form-write-us-name">
+        Ваше имя:
+        <input type="text" name="name" placeholder="Представтесь, пожалуйста">
+      </label>
+      <label class="form-write-us-email">
+        Ваш e-mail:
+        <input type="text" name="email" placeholder="Для отправки ответа">
+      </label>
+      <label class="form-write-us-letter">
+        Текст письма:
+        <textarea name="letter" placeholder="В свободной форме"></textarea>
+      </label>
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
 </body>
 </html>
