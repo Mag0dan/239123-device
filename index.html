@@ -218,19 +218,19 @@
       </div>
     </section>
     <section class="partners container">
-      <a href="#">
+      <a href="http://www.dji.com/">
         <img src="img/logo-1-1.jpg" width="260" height="100" alt="dji">
         <img src="img/logo-1.jpg" width="260" height="100" alt="dji-color">
       </a>
-      <a href="#">
+      <a href="http://www.sp-gadgets.com/">
         <img src="img/logo-2-1.jpg" width="260" height="100" alt="sp-gadgets">
         <img src="img/logo-2.jpg" width="260" height="100" alt="sp-gadgets-color">
       </a>
-      <a href="#">
+      <a href="http://gopro.ru/">
         <img src="img/logo-3-1.jpg" width="260" height="100" alt="go-pro">
         <img src="img/logo-3.jpg" width="260" height="100" alt="go-pro-color">
       </a>
-      <a href="#">
+      <a href="https://www.htcvive.com/">
         <img src="img/logo-4-1.jpg" width="260" height="100" alt="vive">
         <img src="img/logo-4.jpg" width="260" height="100" alt="vive-color">
       </a>
@@ -266,8 +266,8 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.
         </p>
-        <img src="img/map.jpg" width="560" height="222" alt="map-address">
-        <a class="device-btn" href="#">Напишите нам</a>
+        <img src="img/map-yandex.jpg" width="560" height="222" alt="map-adress">
+        <a class="write-us-btn device-btn" href="#">Напишите нам</a>
       </div>
     </section>
   </main>
@@ -303,28 +303,33 @@
           Тел.: +7 (495) 495-95-95
         </section>
         <section class="copyright">
-          <a href="#">HTML Academy</a>
+          <a href="https://htmlacademy.ru">HTML Academy</a>
         </section>
       </div>
     </div>
   </footer>
-  <div class="modal-write-us hidden">
+  <div class="modal-write-us">
     <button class="modal-close" type="button" tittle="Закрыть">Закрыть</button>
     <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
       <label class="form-write-us-name">
         Ваше имя:
-        <input type="text" name="name" placeholder="Представтесь, пожалуйста">
+        <input type="text" name="name" placeholder="Представтесь, пожалуйста" required>
       </label>
       <label class="form-write-us-email">
         Ваш e-mail:
-        <input type="text" name="email" placeholder="Для отправки ответа">
+        <input type="text" name="email" placeholder="Для отправки ответа" required>
       </label>
       <label class="form-write-us-letter">
         Текст письма:
-        <textarea name="letter" placeholder="В свободной форме"></textarea>
+        <textarea name="letter" placeholder="В свободной форме" required></textarea>
       </label>
       <button type="submit">Отправить</button>
     </form>
   </div>
+  <div class="modal-map" id="yandex-map">
+    <button class="modal-close" type="button" tittle="Закрыть">Закрыть</button>
+  </div>
+  <script src="js/script.js"></script>
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=RDUQfAdTpPxf2D-3Zi5kxJBx49zXnQ6N&amp;width=960&amp;height=560&amp;id=yandex-map&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
 </body>
 </html>
