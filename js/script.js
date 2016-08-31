@@ -1,35 +1,42 @@
 var link = document.querySelector(".write-us-btn");
 
 var popup = document.querySelector(".modal-write-us");
-var close = popup.querySelector(".modal-close");
+var popup_close = popup.querySelector(".modal-close");
 
-var form = popup.querySelector("form-write-us");
-var name = popup.querySelector("[name=name]");
+var form = popup.querySelector(".form-write-us");
+var nickname = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
+var letter = popup.querySelector("[name=letter]");
 
-// var storage = localStorage.getItem("name");
+var map_link = document.querySelector(".map");
+var map_modal = document.querySelector(".modal-map");
+var map_close = map_modal.querySelector(".modal-close");
 
-var chart = document.querySelector(".contacts img");
-var map = document.querySelector(".modal-map");
-var close_map = map.querySelector(".modal-close");
+var storage_name = localStorage.getItem("name");
+var storage_email = localStorage.getItem("email");
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.add("modal-show");
 
-  if (storage) {
-    name.value = storage;
-    email.focus();
+  if (storage_name) {
+    nickname.value = storage_name;
+    if (storage_email) {
+      email.value = storage_email;
+      letter.focus();
+    } else {
+      email.focus();
+    }
   } else {
-    name.focus();
+    nickname.focus();
   }
 
 });
 
-close.addEventListener("click", function(event) {
+popup_close.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.remove("modal-show");
-  //popup.classList.remove("modal-error");
+  popup.classList.remove("modal-error");
 });
 
 window.addEventListener("keydown", function(event) {
@@ -38,31 +45,31 @@ window.addEventListener("keydown", function(event) {
       popup.classList.remove("modal-show");
       popup.classList.remove("modal-error");
     }
-    if (map.classList.contains("modal-show")) {
-      map.classList.remove("modal-show");
+
+    if (map_modal.classList.contains("modal-show")) {
+      map_modal.classList.remove("modal-show");
     }
   }
 });
 
-chart.addEventListener("click", function(event) {
-  event.preventDefault();
-  map.classList.add("modal-show");
+form.addEventListener("submit", function(event) {
+  if (!nickname.value || !email.value || !letter.value) {
+    event.preventDefault();
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
+  } else {
+    localStorage.setItem("name", nickname.value);
+    localStorage.setItem("email", email.value);
+  }
 });
 
-close_map.addEventListener("click", function() {
+map_link.addEventListener("click", function(event) {
   event.preventDefault();
-  map.classList.remove("modal-show");
-})
+  map_modal.classList.add("modal-show");
+});
 
-
-
-// form.addEventListener("submit", function(event) {
-//   if (!login.value || !password.value) {
-//     event.preventDefault();
-//     popup.classList.remove("modal-error");
-//     popup.offsetWidth = popup.offsetWidth;
-//     popup.classList.add("modal-error");
-//   } else {
-//     localStorage.setItem("login", login.value);
-//   }
-// });
+map_close.addEventListener("click", function(event) {
+  event.preventDefault();
+  map_modal.classList.remove("modal-show");
+});
